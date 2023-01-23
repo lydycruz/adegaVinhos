@@ -1,0 +1,69 @@
+<div class="card mt-3">
+  <div>
+    <div class="title">
+      <h5>Vinhos</h5>
+    </div>
+  </div>
+
+  <div class="card-body">
+    <div class="form-group">
+      <label>Buscar vinhos</label>
+      <input type="text" class="form-control" id="campoBusca" name="campoBusca" 
+        maxlength="50" [(ngModel)]="campoBusca" required >
+    </div>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Nome</th>
+          <th>Classificação</th>
+          <th>Uva</th>
+          <th>Fabricante</th>
+          <th>Ano de Safra</th>
+          <th>País de Origem</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  *ngFor="let vinho of vinhos | filtroTabela: campoBusca">
+          <td>{{vinho.id}}</td>
+          <td>{{vinho.nome}}</td>
+          <td>{{vinho.classificacao}}</td>
+          <td>{{vinho.uva}}</td>
+          <td>{{vinho.fabricante}}</td>
+          <td>{{vinho.anoSafra}}</td>
+          <td>{{vinho.paisOrigem}}</td>
+          <td>
+            <span class="float-right">
+              <button class="btn btn-primary" (click)="visualizar(vinho.id)">
+                <span>Visualizar</span>
+              </button>
+              <button class="btn btn-warning" (click)="editar(vinho.id)">
+                <span>Editar</span>
+              </button>
+              <button class="btn btn-danger" (click)="remover(vinho.id)">
+                <span>Excluir</span>
+              </button>
+            
+            </span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+ 
+    <ng-template #loading>
+      <span>Carregando Cursos...</span>
+    </ng-template> 
+
+
+  </div>
+ 
+</div>
+
+<!-- <ng-template #deleteModal>
+  <div class="modal-body text-center">
+    <p>Tem certeza que deseja remover esse curso?</p>
+    <button type="button" class="btn btn-default" (click)="onConfirmDelete()">Sim</button>
+    <button type="button" class="btn btn-primary" (click)="onDeclineDelete()">Nao</button>
+  </div>
+</ng-template> -->

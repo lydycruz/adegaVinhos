@@ -1,0 +1,22 @@
+{
+  "vinhos": [
+    {
+      "nome": "Miau",
+      "uva": "Carmenére",
+      "classificacao": "Branco",
+      "anoSafra": 2020,
+      "fabricante": "Undarraga",
+      "paisOrigem": "Chile",
+      "id": 9
+    },
+    {
+      "nome": "Lidi Vinho",
+      "uva": "Cabernet Sauvignon",
+      "classificacao": "Verde",
+      "anoSafra": 1890,
+      "fabricante": "Undarraga",
+      "paisOrigem": "Argentina",
+      "id": 10
+    }
+  ]
+}

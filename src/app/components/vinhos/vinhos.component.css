@@ -1,0 +1,37 @@
+.search{
+    float: right;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.botao{
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.botaoTable{
+    margin-right: 10px;
+}
+
+.line{
+    width: 1px;
+    size: 100px;
+    border-top: 40px solid;
+    border-color: gray ;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+.card-header{
+    padding: 10px;
+}
+
+.title{
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.card-header{
+padding: 5px !important;
+height: 70px !important;
+}

@@ -1,0 +1,13 @@
+.container{
+    margin-top: 10px;
+}
+.card-header{
+    padding: 5px !important;
+    height: 70px !important;
+    }
+
+    .title{
+        float: left;
+        margin-top: 15px;
+        margin-left: 10px;
+    }
